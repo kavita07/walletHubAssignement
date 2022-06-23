@@ -15,6 +15,9 @@ walletHubproperties
 
 open src/test/java -> runner -> RunTest.java right click Run as JUnit Test
 
+1. facebook assignment
+2. wallethub assignment
+
 **Once execution is finished:
 
 At project level open terminal type below command
