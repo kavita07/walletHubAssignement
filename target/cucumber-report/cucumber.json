@@ -1,0 +1,369 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Launch facebook url",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1186000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User launches facebook URL",
+            "match": {
+              "location": "stepDefinitions.FacebookStepDefinition.User_opens_URL()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-22T17:59:24.205Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2368000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.FacebookStepDefinition.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.WalletHubStepDefinitions.setUp1()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Verify login to facebook and post a status messge",
+        "description": "",
+        "id": "facebook-workflow-validation;verify-login-to-facebook-and-post-a-status-messge;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 715000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.FacebookStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 574000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters user name and password for facebook login",
+            "match": {
+              "location": "stepDefinitions.FacebookStepDefinition.User_enters_userName_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 95000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on SignIn button",
+            "match": {
+              "location": "stepDefinitions.FacebookStepDefinition.User_clicks_on_SignIn_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5098000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Verify user login successfull",
+            "match": {
+              "location": "stepDefinitions.FacebookStepDefinition.Verify_user_login_successfull()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1569000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User posts message \"hello world\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hello world\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinitions.FacebookStepDefinition.User_posts_message(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2402000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Verify text \"hello world\" displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hello world\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinitions.FacebookStepDefinition.Verify_text_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Facebook workflow validation",
+    "description": "",
+    "id": "facebook-workflow-validation",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/FacebookLogin.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Launch WalletHUb url",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5833000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User launches WalletHub URL",
+            "match": {
+              "location": "stepDefinitions.WalletHubStepDefinitions.User_opens_WalletHub_URL()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-22T17:59:38.540Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1355000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.FacebookStepDefinition.setUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.WalletHubStepDefinitions.setUp1()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Verify user review has updated",
+        "description": "",
+        "id": "provide-user-review;verify-user-review-has-updated;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 717000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.FacebookStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2353000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigate to login page and enters credentials for WalletHub login",
+            "match": {
+              "location": "stepDefinitions.WalletHubStepDefinitions.User_enter_userName_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3173000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify user login to wallethub successfully",
+            "match": {
+              "location": "stepDefinitions.WalletHubStepDefinitions.Verify_user_login_successfull()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-81GHU0G\u0027, ip: \u0027192.168.1.11\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)\r\n\tat java.util.LinkedHashMap$LinkedValues.forEach(Unknown Source)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)\r\n\tat com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)\r\n\tat org.openqa.selenium.json.Json.toJson(Json.java:42)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)\r\n\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)\r\n\tat base.BasePage.hoverOverElement(BasePage.java:130)\r\n\tat pageObjects.WalletHubPage.mouseOver(WalletHubPage.java:80)\r\n\tat stepDefinitions.WalletHubStepDefinitions.User_ohovers_over_four_star(WalletHubStepDefinitions.java:39)\r\n\tat ✽.User hovers over four star(file:///D:/eclipse-workspace/UIAutomationWalletHubApp/./src/test/java/features/WalletHubTest.feature:10)\r\n\tSuppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-81GHU0G\u0027, ip: \u0027192.168.1.11\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\t\tat org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)\r\n\t\tat org.openqa.selenium.json.Json.toJson(Json.java:44)\r\n\t\tat org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)\r\n\t\tat org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)\r\n\t\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)\r\n\t\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\t\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\t\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)\r\n\t\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)\r\n\t\tat base.BasePage.hoverOverElement(BasePage.java:130)\r\n\t\tat pageObjects.WalletHubPage.mouseOver(WalletHubPage.java:80)\r\n\t\tat stepDefinitions.WalletHubStepDefinitions.User_ohovers_over_four_star(WalletHubStepDefinitions.java:39)\r\n\t\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\t\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\t\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\t\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\t\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\r\n\t\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\r\n\t\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\t\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\t\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\t\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\t\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\t\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\t\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\t\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\t\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\t\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\t\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\t\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\t\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\t\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\t\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\t\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\t\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\t\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\t\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\t\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\t\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\t\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\t\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\t\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\t\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\t\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\t\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\t\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\t\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\t\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\t\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\t\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\t\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)\r\n\t\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)\r\n\t\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)\r\n\t\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)\r\n\tat java.util.LinkedHashMap$LinkedValues.forEach(Unknown Source)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)\r\n\tat com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)\r\n\tat org.openqa.selenium.json.Json.toJson(Json.java:42)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)\r\n\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)\r\n\tat base.BasePage.hoverOverElement(BasePage.java:130)\r\n\tat pageObjects.WalletHubPage.mouseOver(WalletHubPage.java:80)\r\n\tat stepDefinitions.WalletHubStepDefinitions.User_ohovers_over_four_star(WalletHubStepDefinitions.java:39)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"write-review [aria-label\u003d\"4 star rating\"]\"}\n  (Session info: chrome\u003d102.0.5005.115)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-81GHU0G\u0027, ip: \u0027192.168.1.11\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Users\\kavita\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54305}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4cd6d5fe7d5e5dd8835c76beb8d06565\n*** Element info: {Using\u003dcss selector, value\u003dwrite-review [aria-label\u003d\"4 star rating\"]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)\r\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.getWrappedElement(Unknown Source)\r\n\tat org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)\r\n\tat org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)\r\n\tat org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)\r\n\tat org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)\r\n\t... 69 more\r\n",
+              "duration": 10066000000,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "User hovers over four star",
+            "match": {
+              "location": "stepDefinitions.WalletHubStepDefinitions.User_ohovers_over_four_star()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Verify star ligheten up",
+            "match": {
+              "location": "stepDefinitions.WalletHubStepDefinitions.Verify_star_ligheten_up()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User clicks on four star",
+            "match": {
+              "location": "stepDefinitions.WalletHubStepDefinitions.clicks_on_four_star()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User selects policy drodown value \"Health Insurance\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Health Insurance\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinitions.WalletHubStepDefinitions.User_selects_policy_drodown_value(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User writes review with minimum 200",
+            "match": {
+              "location": "stepDefinitions.WalletHubStepDefinitions.User_writes_review()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User clicks on submit review button",
+            "match": {
+              "location": "stepDefinitions.WalletHubStepDefinitions.clicks_on_submit_review_button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Verify review posted successfully",
+            "match": {
+              "location": "stepDefinitions.WalletHubStepDefinitions.Verify_review_posted_successfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "User selects profile menu value \"Profile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Profile\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinitions.WalletHubStepDefinitions.User_selects_profile_menu_value(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "Verify review displaying",
+            "match": {
+              "location": "stepDefinitions.WalletHubStepDefinitions.Verify_review_displaying()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Provide user Review",
+    "description": "",
+    "id": "provide-user-review",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/WalletHubTest.feature",
+    "tags": []
+  }
+]

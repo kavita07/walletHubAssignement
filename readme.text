@@ -1,0 +1,32 @@
+******* WalletHub Assignment **********
+Download allure framework latest release. Unzip the folde, copy path till bin and set under environment path
+reference link -> https://github.com/allure-framework/allure2
+
+AT project level placed files having browser type and user credentials details.
+facebookconfig.properties
+walletHubproperties
+
+(Please Note* tests has been validated on chrome
+*with respective property files
+*please provide your registered email id & password
+* profile name)
+
+**To run runner file:
+
+open src/test/java -> runner -> RunTest.java right click Run as JUnit Test
+
+**Once execution is finished:
+
+At project level open terminal type below command
+
+// allure generate allure-report --clean -o allure-report
+
+allure serve
+
+This "allure serve" command will generate report in temp repository and auto opens in browser
+
+This way you can validate result
+
+You can find logs under logs folder at project level
+
+//if allure report doesn't support then refer junit results

@@ -1,0 +1,4 @@
+base\BasePage.class
+pageObjects\WalletHubPage.class
+pageObjects\FacebookPage.class
+utilities\LoggerHelper.class
